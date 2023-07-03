@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body class="gradient">
+  <style>
+    .gradient
+    {
+      height: calc(100vh);
+      font-size:30px;
+      background: rgb(63,94,251);
+      background: linear-gradient(11deg, rgba(2,0,36,1) 0%, rgba(40,40,143,1) 37%, rgba(0,212,255,1) 100%);
+      /*background: linear-gradient(158deg, rgba(63,94,251,1) 0%, rgba(114,95,162,1) 31%, rgba(67,30,128,1) 58%, rgba(87,34,44,1) 100%);*/
+      background-size: 150% 150%;
+      -webkit-animation: Animation 5s ease infinite;
+      -moz-animation: Animation 5s ease infinite;
+      animation: Animation 5s ease infinite;
+    }
+    @-webkit-keyframes Animation {
+      0%{background-position:10% 0%}
+      50%{background-position:91% 100%}
+      100%{background-position:10% 0%}
+    }
+    @-moz-keyframes Animation {
+      0%{background-position:10% 0%}
+      50%{background-position:91% 100%}
+      100%{background-position:10% 0%}
+    }
+    @keyframes Animation {
+      0%{background-position:10% 0%}
+      50%{background-position:91% 100%}
+      100%{background-position:10% 0%}
+    }
+  </style>
+
+    <div id="root" ></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
